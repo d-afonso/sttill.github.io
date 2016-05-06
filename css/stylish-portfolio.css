@@ -206,9 +206,7 @@ hr.small {
 
 
 @media(max-width:768px) {
-    .map {
-        height: 75%;
-    }
+
 }
 
 /* Footer */
@@ -219,4 +217,16 @@ footer {
 
 a{
 color:#696e6c   
+}
+
+.bottom {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(../img/bg2.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 }
