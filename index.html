@@ -201,10 +201,19 @@
         });
     });
 
-    $('.pull-down').each(function() {
+        $('.pull-down').each(function() {
           var $this = $(this);
           $this.css('margin-top', $this.parent().height() - ($this.height()*2.6))
     });
+
+window.addEventListener('resize', function(event){
+        $('.pull-down').each(function() {
+          var $this = $(this);
+          $this.css('margin-top', $this.parent().height() - ($this.height()*2.6))
+    });
+});
+
+
     </script>
 
 </body>
