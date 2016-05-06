@@ -42,13 +42,10 @@
                 <a href="#top"  onclick = $("#menu-close").click(); >David Afonso</a>
             </li>
             <li>
-                <a href="#about" onclick = $("#menu-close").click(); >About</a>
-            </li>
-            <li>
                 <a href="#portfolio" onclick = $("#menu-close").click(); >Portfolio</a>
             </li>
             <li>
-                <a href="#contact" onclick = $("#menu-close").click(); >Contact</a>
+                <a href="#about" onclick = $("#menu-close").click(); >About</a>
             </li>
         </ul>
     </nav>
@@ -59,23 +56,11 @@
             <h1>Hi, I'm David Afonso</h1>
             <h3>Graphic Designer &amp; Web Enthusiast. Living in Porto, Portugal.<br>Welcome to my portfolio!</h3>
             <br>
-            <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
+            <a href="#portfolio" class="btn btn-lg"><i class="fa fa-angle-down fa-fw fa-2x"></i></a>
         </div>
     </header>
 
     <!-- About -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Stylish Portfolio is the perfect theme for your next project!</h2>
-                    <p class="lead">This theme features some wonderful photography courtesy of <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a>.</p>
-                </div>
-            </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
-    </section>
 
 
     <!-- Callout -->
@@ -136,10 +121,19 @@
     </section>
 
 
-    <!-- Footer -->
-    <footer id="contact">
+    <section id="about" class="about header">
         <div class="container">
             <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Stylish Portfolio is the perfect theme for your next project!</h2>
+                    <p class="lead">This theme features some wonderful photography courtesy of <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a>.</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+        <div class="container pull-down">
+            <div class="row ">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
                     <h4><a href="mailto:name@example.com"><strong>get in touch</a></strong>
                     </h4>
@@ -163,9 +157,12 @@
                 <!--<hr class="small">-->
                    <!-- <p class="text-muted">Copyright &copy; Your Website 2014</p>-->
                 </div>
-            </div>
+            </div>  
+        <!-- /.row -->
         </div>
-    </footer>
+        <!-- /.container -->
+    </section>
+
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -202,6 +199,11 @@
                 }
             }
         });
+    });
+
+    $('.pull-down').each(function() {
+          var $this = $(this);
+          $this.css('margin-top', $this.parent().height() - ($this.height()*2.6))
     });
     </script>
 
