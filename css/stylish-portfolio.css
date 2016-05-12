@@ -219,13 +219,17 @@ color:#696e6c
     z-index: 10;
     background-color: rgba(255,255,255,1);
     opacity: 0.8;
-    display: table;
-    display: none;
+    /*display: none;*/
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
     
 }
 
 .portfolio-item:hover .bar_proj {
- display:table;
+ /*display:table;*/
+  visibility: visible;
+  opacity: 1;
   }
 
 
@@ -264,5 +268,4 @@ html.touch-device {
 
 /* This will not affect touch devices */
 html.no-touch-device a:hover {
-    font-weight: bold;
 }
