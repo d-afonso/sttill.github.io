@@ -257,6 +257,13 @@ color:#696e6c
         font-size: 25px!important;
     }
 }
+@media(max-width:480px) {
+    .pull-down{
+                bottom: 20px;
+                position: absolute;
+                left: calc(50% - 85px);
+    }
+}
 
 /* Footer */
 
