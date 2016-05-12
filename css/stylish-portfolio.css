@@ -184,8 +184,9 @@ hr.small {
     margin: 0 auto;
 }
 
-.img-portfolio:hover {
+.img-portfolio:hover {/*
     opacity: 0.8;
+  transition: opacity 0.3s linear;*/
 }
 
 a{
@@ -246,6 +247,15 @@ color:#696e6c
 
 @media(max-width:768px) {
 
+}
+
+@media(min-device-width:320px) and (max-device-width: 480px)  {
+    h1{
+        font-size: 30px!important;
+    }
+    h2{
+        font-size: 25px!important;
+    }
 }
 
 /* Footer */
