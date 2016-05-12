@@ -250,3 +250,19 @@ footer {
     padding: 100px 0;
 }
 
+html.no-touch-device {
+    /* This style will be applied form the beginning, and continue to exist unless the second test shows it's a touch device */
+}
+ 
+html.prel-touch-device {
+    /* If the preliminary test shows it's a touch device you can use this to apply styles. This will rarely be used in the CSS. But might be handy in the JavaScript early on in the code flow. */
+}
+ 
+html.touch-device {
+    /* Here you add the styles that only the touch devices should use. Try to avoid it as much as possible. */
+}
+
+/* This will not affect touch devices */
+html.no-touch-device a:hover {
+    font-weight: bold;
+}
