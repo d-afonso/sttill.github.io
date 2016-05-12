@@ -128,7 +128,7 @@ hr.small {
 }
 
 #menu-toggle {
-    z-index: 1;
+    z-index: 100;
     position: fixed;
     top: 0;
     right: 0;
@@ -165,18 +165,19 @@ hr.small {
 /* About */
 
 .about {
-    padding: 50px 0;
+    padding: 20px 0;
 }
 
 
 /* Portfolio */
 
 .portfolio {
-    padding: 50px 0;
+    padding: 20px 0;
 }
 
 .portfolio-item {
     margin-bottom: 30px;
+    position:relative;
 }
 
 .img-portfolio {
@@ -187,36 +188,13 @@ hr.small {
     opacity: 0.8;
 }
 
-
-/* Call to Action */
-
-.call-to-action {
-    padding: 50px 0;
-}
-
-.call-to-action .btn {
-    margin: 10px;
-}
-
-/* Map */
-
-.map {
-    height: 500px;
-}
-
-
-@media(max-width:768px) {
-
-}
-
-/* Footer */
-
-footer {
-    padding: 100px 0;
-}
-
 a{
 color:#696e6c   
+}
+
+a:hover{
+    text-decoration: none;
+color:#696e6c 
 }
 
 .bottom {
@@ -230,3 +208,45 @@ color:#696e6c
     background-size: cover;
     -o-background-size: cover;
 }
+
+
+.bar_proj{
+    font-size: 19px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    background-color: rgba(255,255,255,1);
+    opacity: 0.8;
+    display: table;
+    display: none;
+    
+}
+
+.portfolio-item:hover .bar_proj {
+ display:table;
+  }
+
+
+/* Call to Action */
+
+.call-to-action {
+    padding: 50px 0;
+}
+
+.call-to-action .btn {
+    margin: 10px;
+}
+
+
+@media(max-width:768px) {
+
+}
+
+/* Footer */
+
+footer {
+    padding: 100px 0;
+}
+
